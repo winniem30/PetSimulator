@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('https://petsimulator.onrender.com');
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const socket = io(apiUrl);
 
 function BattleArena() {
   const [petId, setPetId] = useState('');
