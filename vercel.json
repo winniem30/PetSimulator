@@ -3,5 +3,11 @@
   "outputDirectory": "frontend/build",
   "env": {
     "REACT_APP_API_URL": "https://petsimulator.onrender.com"
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ]
 }
