@@ -13,7 +13,7 @@ function MiniGame() {
 
   const saveProgress = async () => {
     try {
-      await axios.put(`http://localhost:5001/api/pets/${petId}`, { health: 100 + score }); // Example update
+      await axios.put(`https://petsimulator.onrender.com/api/pets/${petId}`, { health: 100 + score }); // Example update
       alert('Progress saved!');
     } catch (err) {
       alert('Error saving');

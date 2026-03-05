@@ -7,7 +7,7 @@ function PetSelection() {
 
   const fetchPet = async () => {
     try {
-      const response = await axios.get(`http://localhost:5001/api/pets/${petId}`);
+      const response = await axios.get(`https://petsimulator.onrender.com/api/pets/${petId}`);
       setPet(response.data);
     } catch (err) {
       alert('Pet not found');
